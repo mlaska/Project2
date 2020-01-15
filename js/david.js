@@ -21,7 +21,7 @@ function displayPage()
     var firstrecipeDict = data.hits[0];
     createCharts(firstrecipeDict);
     createIngredients(firstrecipeDict);
-
+    findIngredients(firstrecipeDict);
   });
 
 }
@@ -74,7 +74,7 @@ function optionChanged()
 
   createCharts(recipeObject);
   createIngredients(recipeObject);
-  
+  findIngredients(recipeObject);
   
   });
 }
