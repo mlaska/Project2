@@ -1,24 +1,28 @@
 
 //Difine funtion to display charts
-function createNutrInfo (recipe) {
+function createCharts (recipe) {
   d3.json("data/sample_data.json").then((data) => {
     var hits = data.hits;
-    var labels = data.hits.map(x => x.recipe.label);
+    var recipe_names = data.hits.map(l => l.recipe.label);
+    var ingredientsList = data.hits.map(l => l.recipe.ingredientLines);
 
-    console.log(labels);
+    console.log(recipe_names);
+    console.log(ingredientsList);
+   
+
 
   } 
 )}; 
 
-  
+
 
 
 //Define optionChange to like to html file
 function optionChanged(recipe)
 {
   console.log("dropdown selection", recipe);
-  //createCharts(recipe);
-  createNutrInfo(recipe);
+  createCharts(recipe);
+  //createIngredients(recipe);
   //createGaugeCharts(recipe);
 }
 
@@ -31,15 +35,16 @@ function displayPage()
 
   //Populate the dropdown list
   d3.json("data/sample_data.json").then((data)=> {
-    var recipeNames = data.hits;
-    console.log(recipeNames);
-    recipeNames.forEach(recipe => {
+    var hits = data.hits;
+    var recipe_names = data.hits.map(l => l.recipe.label);
+    console.log(recipe_names);
+    recipe_names.forEach(recipe => {
       selector.append("option").text(recipe).property("value", recipe);
     });
     
-    var firstrecipe = recipeNames[0];
-    //createCharts(firstrecipe);
-    createNutrInfo(firstrecipe);
+    var firstrecipe = recipe_names[0];
+    createCharts(firstrecipe);
+    //createIngredients(firstrecipe);
     //createGaugeCharts(firstrecipe);
   });
 
