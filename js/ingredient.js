@@ -27,9 +27,32 @@ function findIngredients(varZ)
 
 function createI_Charts(aa)
 {
+calorieList = []; 
+      for(i=0; i <aa.length; i++) {
+        var calD = aa[i][0].info.calories
+            calorieList.push(calD)      
+      }
+console.log(calorieList)
 
-  //TO DO
+var bubble_chart = {
+    
+  mode: "markers",
+  x: otu_ids,
+  y: sample_values,
+  text: otu_labels, 
+  marker: {color: otu_ids, colorscale: "Jet", size: sample_values}
+
+};
+
+var bubble_data = [bubble_chart];
+
+var bubble_layout = {
+    title: "Bacteria Culters Per Sample", 
+    margin: {t : 0}, 
+    hovermode: "closets",
+    xaxis: { title: "OTU ID"}, 
+    margin: {t : 30}
+};
+
+Plotly.newPlot("bubble", bubble_data, bubble_layout);
 }
-
-
-
