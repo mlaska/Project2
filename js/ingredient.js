@@ -4,7 +4,7 @@ function findIngredients(varZ)
   //List of ingredients from recipe Object(varZ from optionChanged function)
   recipeList = varZ.recipe.ingredientLines;
 
-  console.log("findIngredients list", recipeList);
+  console.log("findIngredients recipeList", recipeList);
 
   //Empty list of dictionaries to store ingredients' nutrition data
   ingDict = [];
@@ -13,10 +13,10 @@ function findIngredients(varZ)
     
     //Loops through each ingredient in recipeList, finds recipe in ingredient database,
     //  adds ingredient nutrition object to list ingDict
-    dataArray = data.hits
+    dataArray = data.hits;
     for(i=0; i < recipeList.length; i++) {
 
-      var data_filter = dataArray.filter( element => element.name ==recipeList[i])
+      var data_filter = dataArray.filter( element => element.name ==recipeList[i]);
       ingDict.push(data_filter);
     }
     
@@ -33,16 +33,20 @@ function createIngredientsEdit(aa)
 {
   //Ingredient list with key value pairs "name" : name, "weight": weight 
   var listToBeMade = [];
-  // var firstMultiplyer = [];
 
   for(i=0; i < aa.length; i++) {
     
+    try {
     var loopDict = {"name": aa[i][0].name, "weight": aa[i][0].info.totalWeight}
     listToBeMade.push(loopDict);
-
-    // firstMultiplyer.push(1);
+    }
+    catch(err) {
+      window.alert("Complete recipe info coming soon...choose a different one! ", err);
+      break;
+    }
 
   };
+  console.log("edit dropdown List", listToBeMade);
 
   //enter update exit to populate Ingredient Info table (with text boxes!)
   PANEL = d3.select("#ingredient-metadata").selectAll("form")
@@ -241,43 +245,87 @@ return multiplier, nameList;
       
     console.log("lists", calList, protList, fatList, sodList);
     var buttonValue = event.target.value;
-  //   "Calories", "Fat", "Protein", "Sodium"
-  //   switch(buttonValue) {
+    "Calories", "Fat", "Protein", "Sodium"
+    switch(buttonValue) {
 
-  //     case 1:
-  //       buttonValue == "Calories";
-  //       newList = calList;
-  //       break;
+      case "Calories":
+        
+        calList2 = [];
+        for (i=0; i <nameList.length; i++){
+          var x = calList[i]*multiplier[i];
+          calList2.push(x);
+        };
+        newList = calList2;
+        newTitle = "Ingredient Calories (g)";
+        break;
 
-  //     case 2:
-  //       buttonValue == "Fat";
-  //       newList = fatList;
-  //       break;
+      case "Fat":
+        
+        fatList2 = [];
+        for (i=0; i <nameList.length; i++){
+          var f = fatList[i]*multiplier[i];
+          fatList2.push(f);
+        };
+        newList = fatList2;
+        newTitle = "Ingredient Fat (g)";
+        break;
       
-  //     case 3:
-  //       buttonValue == "Protein";
-  //       newList = protList;
-  //       break;
+      case "Protein":
+        
+        protList2 = [];
+        for (i=0; i <nameList.length; i++){
+          var x = protList[i]*multiplier[i];
+          protList2.push(x);
+        }
+        newList = protList2;
+        newTitle = "Ingredient Proteins (g)";
+        break;
 
-  //     case 4:
-  //       buttonValue == "Sodium";
-  //       newList = sodList;
-  //       break;
+      case "Sodium":
+        
+        sodList2 = [];
+        for (i=0; i <nameList.length; i++){
+          var x = sodList[i]*multiplier[i];
+          sodList2.push(x);
+        }
+        newList = sodList2;
+        newTitle = "Ingredient Sodium (mg)";
+        break;
 
-  //     default:
-  //       console.log("Bad button, no nutrition data to graph");
-  //   }
+      default:
+        console.log("Bad button, no nutrition data to graph");
+    }
+    console.log("newList", newList);
+    // by = newList;
+    // btitle = newTitle;
 
-  //   by = newList;
-    
-  //   bmarker = { color: nameList,
-  //                size: newList};  
+    // bmarker = { color: nameList,
+    //              size: newList};  
 
+    var bubble_chart = {
 
+    mode: "markers",
+    x: nameList,
+    y: newList,
+    // text: calorieList, 
+    marker: {color: nameList, colorscale: "Jet", size: newList}
+  
+    };
+  
+  var bubble_data = [bubble_chart];
+  
+  var bubble_layout = {
+      title: newTitle, 
+      margin: {t : 0}, 
+      hovermode: "closets",
+      xaxis: { title: "Ingredients"}, 
+      margin: {t : 30}
+  };
+  
+  Plotly.newPlot("bubble", bubble_data, bubble_layout);
   
   // Plotly.restyle("bubble", "y", [by]);
   
   // Plotly.restyle("bubble", "marker", [bmarker]);
-
+  // Plotly.restyle("bubble", "title", [btitle]);
   }
-
