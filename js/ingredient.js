@@ -29,25 +29,26 @@ function createI_Charts(aa)
 {
 calorieList = []; 
       for(i=0; i <aa.length; i++) {
-        var calD = aa[i][0].info.calories
-            calorieList.push(calD)      
+        var calL = aa[i][0].info.calories
+            calorieList.push(calL)      
       }
 console.log(calorieList)
-/*
+
+
 var bubble_chart = {
-    
+
   mode: "markers",
-  x: otu_ids,
-  y: sample_values,
-  text: otu_labels, 
-  marker: {color: otu_ids, colorscale: "Jet", size: sample_values}
+  // x: otu_ids,
+  y: calorieList,
+  text: calorieList, 
+  marker: {color: calorieList, colorscale: "Jet", size: calorieList}
 
 };
 
 var bubble_data = [bubble_chart];
 
 var bubble_layout = {
-    title: "Bacteria Culters Per Sample", 
+    title: "Calories per ingredients", 
     margin: {t : 0}, 
     hovermode: "closets",
     xaxis: { title: "OTU ID"}, 
