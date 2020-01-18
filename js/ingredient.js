@@ -34,12 +34,7 @@ calorieList = [];
       }
 console.log(calorieList)
 
-// calorieIngr = [];
-//       for(i=0; i <aa.length; i++) {
-//         var calL = aa[i][0].info
-//             calorieList.push(calL)      
-//       }
-// console.log(calorieIngr)
+
 var bubble_chart = {
 
   mode: "markers",
