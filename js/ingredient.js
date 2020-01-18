@@ -33,7 +33,7 @@ calorieList = [];
             calorieList.push(calD)      
       }
 console.log(calorieList)
-
+/*
 var bubble_chart = {
     
   mode: "markers",
@@ -55,4 +55,5 @@ var bubble_layout = {
 };
 
 Plotly.newPlot("bubble", bubble_data, bubble_layout);
+*/
 }

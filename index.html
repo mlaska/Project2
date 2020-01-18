@@ -7,25 +7,24 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Recipe Project</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-  <div class="container" >
+  <div class="container" > <!-- main container starts -->
     <div class="row">
       <div class="col-md-12 jumbotron text-center" > 
-        <style>
-          .jumbotron {
-              background: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/colorful-organic-vegetables-in-paper-eco-shopping-royalty-free-image-1131005372-1565210333.jpg") center center / cover no-repeat;
-          }
-          </style>  
+        <br>
         <h1><strong>Project 2</strong></h1>
         <p>Use the interactive charts below to explore the dataset</p>
       </div>
     </div>
     <!-- updated row to include all gauge charts-->
+    
     <div class="row">
-      <div class="col-md-3">
+      <div class="col-6 col-sm-3">
         <div class="well">
           <h5><strong>Recipe </strong></h5>
           <!-- Moved onchange to the js file...no reason, just liked it there--David -->
@@ -34,14 +33,16 @@
         </div>
         <div class="panel panel-primary" >
           <div class="panel-heading" >
-            <h3 class="panel-title"><strong>Nutrional Info</strong></h3>
+            <h3 class="panel-title"><strong>Ingredients Info</strong></h3>
           </div>
           <div id="sample-metadata" class="panel-body" ></div>
         </div>
-      </div> 
+      </div> <br>
+      <div class="container gauge">
       <div class="row">
+     
       <div class="col-6 col-sm-4">
-        <div id="gauge1"></div> <br>
+        <div id="gauge1"></div> <br> 
       </div> 
       <div class="col-6 col-sm-4">
         <div id="gauge2"></div><br>
@@ -50,13 +51,14 @@
       <div class="row">
       <div class="col-6 col-sm-4">
         <div id="gauge3" ></div> 
-    </div>
+      </div>
     
       <div class="col-6 col-sm-4">
-        <div id="gauge4" ></div> <br>
-      </div>  
+        <div id="gauge4" ></div>
+      </div> <br> 
     </div>
   </div>
+    </div>
 </div>
     <div class="row">
       <div class="col-md-12">
@@ -64,6 +66,7 @@
       
       </div>
     </div>
+</div> <!-- main container ends-->
   
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
