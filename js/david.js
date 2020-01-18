@@ -22,6 +22,7 @@ function displayPage()
     createCharts(firstrecipeDict);
     createIngredients(firstrecipeDict);
     findIngredients(firstrecipeDict);
+    createGaugeCharts(firstrecipeDict);
   });
 
 }
@@ -75,6 +76,7 @@ function optionChanged()
   createCharts(recipeObject);
   createIngredients(recipeObject);
   findIngredients(recipeObject);
+  createGaugeCharts(recipeObject);
   
   });
 }
