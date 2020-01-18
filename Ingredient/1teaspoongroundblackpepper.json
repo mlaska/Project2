@@ -1,0 +1,286 @@
+{
+  "name": "  1 teaspoon ground black pepper",
+  "Volume": "",
+  "Measure": "",
+  "Name": "1 teaspoon ground black pepper",
+  "Orig_name": "1 teaspoon ground black pepper",
+  "info": {
+    "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_a66f1619a5704de2addfeb204748a554",
+    "calories": 5,
+    "totalWeight": 2.3,
+    "dietLabels": [
+      "LOW_FAT"
+    ],
+    "healthLabels": [
+      "SUGAR_CONSCIOUS",
+      "VEGAN",
+      "VEGETARIAN",
+      "PEANUT_FREE",
+      "TREE_NUT_FREE",
+      "ALCOHOL_FREE",
+      "SULPHITE_FREE"
+    ],
+    "cautions": [],
+    "totalNutrients": {
+      "ENERC_KCAL": {
+        "label": "Energy",
+        "quantity": 5.773,
+        "unit": "kcal"
+      },
+      "FAT": {
+        "label": "Fat",
+        "quantity": 0.07497999999999999,
+        "unit": "g"
+      },
+      "FASAT": {
+        "label": "Saturated",
+        "quantity": 0.032015999999999996,
+        "unit": "g"
+      },
+      "FAMS": {
+        "label": "Monounsaturated",
+        "quantity": 0.016996999999999998,
+        "unit": "g"
+      },
+      "FAPU": {
+        "label": "Polyunsaturated",
+        "quantity": 0.022954,
+        "unit": "g"
+      },
+      "CHOCDF": {
+        "label": "Carbs",
+        "quantity": 1.47085,
+        "unit": "g"
+      },
+      "FIBTG": {
+        "label": "Fiber",
+        "quantity": 0.5819,
+        "unit": "g"
+      },
+      "SUGAR": {
+        "label": "Sugars",
+        "quantity": 0.01472,
+        "unit": "g"
+      },
+      "PROCNT": {
+        "label": "Protein",
+        "quantity": 0.23897000000000002,
+        "unit": "g"
+      },
+      "NA": {
+        "label": "Sodium",
+        "quantity": 0.45999999999999996,
+        "unit": "mg"
+      },
+      "CA": {
+        "label": "Calcium",
+        "quantity": 10.189,
+        "unit": "mg"
+      },
+      "MG": {
+        "label": "Magnesium",
+        "quantity": 3.933,
+        "unit": "mg"
+      },
+      "K": {
+        "label": "Potassium",
+        "quantity": 30.567,
+        "unit": "mg"
+      },
+      "FE": {
+        "label": "Iron",
+        "quantity": 0.22333000000000003,
+        "unit": "mg"
+      },
+      "ZN": {
+        "label": "Zinc",
+        "quantity": 0.02737,
+        "unit": "mg"
+      },
+      "P": {
+        "label": "Phosphorus",
+        "quantity": 3.634,
+        "unit": "mg"
+      },
+      "VITA_RAE": {
+        "label": "Vitamin A",
+        "quantity": 0.621,
+        "unit": "\u00b5g"
+      },
+      "THIA": {
+        "label": "Thiamin (B1)",
+        "quantity": 0.002484,
+        "unit": "mg"
+      },
+      "RIBF": {
+        "label": "Riboflavin (B2)",
+        "quantity": 0.00414,
+        "unit": "mg"
+      },
+      "NIA": {
+        "label": "Niacin (B3)",
+        "quantity": 0.026289,
+        "unit": "mg"
+      },
+      "VITB6A": {
+        "label": "Vitamin B6",
+        "quantity": 0.006692999999999999,
+        "unit": "mg"
+      },
+      "FOLDFE": {
+        "label": "Folate equivalent (total)",
+        "quantity": 0.391,
+        "unit": "\u00b5g"
+      },
+      "FOLFD": {
+        "label": "Folate (food)",
+        "quantity": 0.391,
+        "unit": "\u00b5g"
+      },
+      "TOCPHA": {
+        "label": "Vitamin E",
+        "quantity": 0.02392,
+        "unit": "mg"
+      },
+      "VITK1": {
+        "label": "Vitamin K",
+        "quantity": 3.7651,
+        "unit": "\u00b5g"
+      },
+      "WATER": {
+        "label": "Water",
+        "quantity": 0.28658,
+        "unit": "g"
+      }
+    },
+    "totalDaily": {
+      "ENERC_KCAL": {
+        "label": "Energy",
+        "quantity": 0.28864999999999996,
+        "unit": "%"
+      },
+      "FAT": {
+        "label": "Fat",
+        "quantity": 0.11535384615384614,
+        "unit": "%"
+      },
+      "FASAT": {
+        "label": "Saturated",
+        "quantity": 0.16007999999999997,
+        "unit": "%"
+      },
+      "CHOCDF": {
+        "label": "Carbs",
+        "quantity": 0.49028333333333335,
+        "unit": "%"
+      },
+      "FIBTG": {
+        "label": "Fiber",
+        "quantity": 2.3276,
+        "unit": "%"
+      },
+      "PROCNT": {
+        "label": "Protein",
+        "quantity": 0.47794000000000003,
+        "unit": "%"
+      },
+      "NA": {
+        "label": "Sodium",
+        "quantity": 0.019166666666666665,
+        "unit": "%"
+      },
+      "CA": {
+        "label": "Calcium",
+        "quantity": 1.0189,
+        "unit": "%"
+      },
+      "MG": {
+        "label": "Magnesium",
+        "quantity": 0.9364285714285713,
+        "unit": "%"
+      },
+      "K": {
+        "label": "Potassium",
+        "quantity": 0.6503617021276595,
+        "unit": "%"
+      },
+      "FE": {
+        "label": "Iron",
+        "quantity": 1.2407222222222223,
+        "unit": "%"
+      },
+      "ZN": {
+        "label": "Zinc",
+        "quantity": 0.2488181818181818,
+        "unit": "%"
+      },
+      "P": {
+        "label": "Phosphorus",
+        "quantity": 0.5191428571428571,
+        "unit": "%"
+      },
+      "VITA_RAE": {
+        "label": "Vitamin A",
+        "quantity": 0.069,
+        "unit": "%"
+      },
+      "THIA": {
+        "label": "Thiamin (B1)",
+        "quantity": 0.20700000000000002,
+        "unit": "%"
+      },
+      "RIBF": {
+        "label": "Riboflavin (B2)",
+        "quantity": 0.3184615384615384,
+        "unit": "%"
+      },
+      "NIA": {
+        "label": "Niacin (B3)",
+        "quantity": 0.16430625,
+        "unit": "%"
+      },
+      "VITB6A": {
+        "label": "Vitamin B6",
+        "quantity": 0.5148461538461537,
+        "unit": "%"
+      },
+      "FOLDFE": {
+        "label": "Folate equivalent (total)",
+        "quantity": 0.09775,
+        "unit": "%"
+      },
+      "TOCPHA": {
+        "label": "Vitamin E",
+        "quantity": 0.15946666666666667,
+        "unit": "%"
+      },
+      "VITK1": {
+        "label": "Vitamin K",
+        "quantity": 3.137583333333333,
+        "unit": "%"
+      }
+    },
+    "totalNutrientsKCal": {
+      "ENERC_KCAL": {
+        "label": "Energy",
+        "quantity": 7,
+        "unit": "kcal"
+      },
+      "PROCNT_KCAL": {
+        "label": "Calories from protein",
+        "quantity": 1,
+        "unit": "kcal"
+      },
+      "FAT_KCAL": {
+        "label": "Calories from fat",
+        "quantity": 1,
+        "unit": "kcal"
+      },
+      "CHOCDF_KCAL": {
+        "label": "Calories from carbohydrates",
+        "quantity": 5,
+        "unit": "kcal"
+      }
+    }
+  }
+}

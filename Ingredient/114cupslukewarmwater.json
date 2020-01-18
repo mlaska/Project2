@@ -1,0 +1,94 @@
+{
+  "name": "  1 1/4 cups lukewarm water",
+  "Volume": "",
+  "Measure": "",
+  "Name": "1 1/4 cups lukewarm water",
+  "Orig_name": "1 1/4 cups lukewarm water",
+  "info": {
+    "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_bdf689971f9448dabe4855c9d08da464",
+    "calories": 0,
+    "totalWeight": 296.25,
+    "dietLabels": [],
+    "healthLabels": [
+      "SUGAR_CONSCIOUS",
+      "VEGAN",
+      "VEGETARIAN",
+      "PEANUT_FREE",
+      "TREE_NUT_FREE",
+      "ALCOHOL_FREE",
+      "SULPHITE_FREE"
+    ],
+    "cautions": [],
+    "totalNutrients": {
+      "NA": {
+        "label": "Sodium",
+        "quantity": 11.85,
+        "unit": "mg"
+      },
+      "CA": {
+        "label": "Calcium",
+        "quantity": 8.8875,
+        "unit": "mg"
+      },
+      "MG": {
+        "label": "Magnesium",
+        "quantity": 2.9625,
+        "unit": "mg"
+      },
+      "ZN": {
+        "label": "Zinc",
+        "quantity": 0.029625,
+        "unit": "mg"
+      },
+      "WATER": {
+        "label": "Water",
+        "quantity": 295.95375,
+        "unit": "g"
+      }
+    },
+    "totalDaily": {
+      "NA": {
+        "label": "Sodium",
+        "quantity": 0.49375,
+        "unit": "%"
+      },
+      "CA": {
+        "label": "Calcium",
+        "quantity": 0.8887499999999999,
+        "unit": "%"
+      },
+      "MG": {
+        "label": "Magnesium",
+        "quantity": 0.7053571428571429,
+        "unit": "%"
+      },
+      "ZN": {
+        "label": "Zinc",
+        "quantity": 0.2693181818181818,
+        "unit": "%"
+      }
+    },
+    "totalNutrientsKCal": {
+      "ENERC_KCAL": {
+        "label": "Energy",
+        "quantity": 0,
+        "unit": "kcal"
+      },
+      "PROCNT_KCAL": {
+        "label": "Calories from protein",
+        "quantity": 0,
+        "unit": "kcal"
+      },
+      "FAT_KCAL": {
+        "label": "Calories from fat",
+        "quantity": 0,
+        "unit": "kcal"
+      },
+      "CHOCDF_KCAL": {
+        "label": "Calories from carbohydrates",
+        "quantity": 0,
+        "unit": "kcal"
+      }
+    }
+  }
+}

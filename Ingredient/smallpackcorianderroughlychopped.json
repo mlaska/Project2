@@ -1,0 +1,46 @@
+{
+  "name": "  small pack coriander, roughly chopped",
+  "Volume": "",
+  "Measure": "",
+  "Name": "small pack coriander, roughly chopped",
+  "Orig_name": "small pack coriander, roughly chopped",
+  "info": {
+    "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_e0a838adfce747eb8edcab8811a6ea77",
+    "calories": 0,
+    "totalWeight": 0.0,
+    "dietLabels": [],
+    "healthLabels": [
+      "VEGAN",
+      "VEGETARIAN",
+      "PEANUT_FREE",
+      "TREE_NUT_FREE",
+      "ALCOHOL_FREE",
+      "SULPHITE_FREE"
+    ],
+    "cautions": [],
+    "totalNutrients": {},
+    "totalDaily": {},
+    "totalNutrientsKCal": {
+      "ENERC_KCAL": {
+        "label": "Energy",
+        "quantity": 0,
+        "unit": "kcal"
+      },
+      "PROCNT_KCAL": {
+        "label": "Calories from protein",
+        "quantity": 0,
+        "unit": "kcal"
+      },
+      "FAT_KCAL": {
+        "label": "Calories from fat",
+        "quantity": 0,
+        "unit": "kcal"
+      },
+      "CHOCDF_KCAL": {
+        "label": "Calories from carbohydrates",
+        "quantity": 0,
+        "unit": "kcal"
+      }
+    }
+  }
+}

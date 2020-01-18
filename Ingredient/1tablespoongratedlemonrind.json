@@ -1,0 +1,288 @@
+{
+  "name": "  1 tablespoon  grated lemon rind",
+  "Volume": "",
+  "Measure": "",
+  "Name": "1 tablespoon  grated lemon rind",
+  "Orig_name": "1 tablespoon  grated lemon rind",
+  "info": {
+    "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_be230be86fde428282a6b938595da8db",
+    "calories": 2,
+    "totalWeight": 6.0,
+    "dietLabels": [
+      "LOW_FAT"
+    ],
+    "healthLabels": [
+      "SUGAR_CONSCIOUS",
+      "VEGAN",
+      "VEGETARIAN",
+      "PEANUT_FREE",
+      "TREE_NUT_FREE",
+      "ALCOHOL_FREE",
+      "SULPHITE_FREE"
+    ],
+    "cautions": [
+      "SULFITES"
+    ],
+    "totalNutrients": {
+      "ENERC_KCAL": {
+        "label": "Energy",
+        "quantity": 2.82,
+        "unit": "kcal"
+      },
+      "FAT": {
+        "label": "Fat",
+        "quantity": 0.018,
+        "unit": "g"
+      },
+      "FASAT": {
+        "label": "Saturated",
+        "quantity": 0.00234,
+        "unit": "g"
+      },
+      "FAMS": {
+        "label": "Monounsaturated",
+        "quantity": 0.0006599999999999999,
+        "unit": "g"
+      },
+      "FAPU": {
+        "label": "Polyunsaturated",
+        "quantity": 0.005339999999999999,
+        "unit": "g"
+      },
+      "CHOCDF": {
+        "label": "Carbs",
+        "quantity": 0.96,
+        "unit": "g"
+      },
+      "FIBTG": {
+        "label": "Fiber",
+        "quantity": 0.636,
+        "unit": "g"
+      },
+      "SUGAR": {
+        "label": "Sugars",
+        "quantity": 0.2502,
+        "unit": "g"
+      },
+      "PROCNT": {
+        "label": "Protein",
+        "quantity": 0.09,
+        "unit": "g"
+      },
+      "NA": {
+        "label": "Sodium",
+        "quantity": 0.36,
+        "unit": "mg"
+      },
+      "CA": {
+        "label": "Calcium",
+        "quantity": 8.04,
+        "unit": "mg"
+      },
+      "MG": {
+        "label": "Magnesium",
+        "quantity": 0.8999999999999999,
+        "unit": "mg"
+      },
+      "K": {
+        "label": "Potassium",
+        "quantity": 9.6,
+        "unit": "mg"
+      },
+      "FE": {
+        "label": "Iron",
+        "quantity": 0.048,
+        "unit": "mg"
+      },
+      "ZN": {
+        "label": "Zinc",
+        "quantity": 0.015,
+        "unit": "mg"
+      },
+      "P": {
+        "label": "Phosphorus",
+        "quantity": 0.72,
+        "unit": "mg"
+      },
+      "VITA_RAE": {
+        "label": "Vitamin A",
+        "quantity": 0.18,
+        "unit": "\u00b5g"
+      },
+      "VITC": {
+        "label": "Vitamin C",
+        "quantity": 7.739999999999999,
+        "unit": "mg"
+      },
+      "THIA": {
+        "label": "Thiamin (B1)",
+        "quantity": 0.0036,
+        "unit": "mg"
+      },
+      "RIBF": {
+        "label": "Riboflavin (B2)",
+        "quantity": 0.0048,
+        "unit": "mg"
+      },
+      "NIA": {
+        "label": "Niacin (B3)",
+        "quantity": 0.024,
+        "unit": "mg"
+      },
+      "VITB6A": {
+        "label": "Vitamin B6",
+        "quantity": 0.01032,
+        "unit": "mg"
+      },
+      "FOLDFE": {
+        "label": "Folate equivalent (total)",
+        "quantity": 0.78,
+        "unit": "\u00b5g"
+      },
+      "FOLFD": {
+        "label": "Folate (food)",
+        "quantity": 0.78,
+        "unit": "\u00b5g"
+      },
+      "TOCPHA": {
+        "label": "Vitamin E",
+        "quantity": 0.015,
+        "unit": "mg"
+      },
+      "WATER": {
+        "label": "Water",
+        "quantity": 4.896,
+        "unit": "g"
+      }
+    },
+    "totalDaily": {
+      "ENERC_KCAL": {
+        "label": "Energy",
+        "quantity": 0.141,
+        "unit": "%"
+      },
+      "FAT": {
+        "label": "Fat",
+        "quantity": 0.02769230769230769,
+        "unit": "%"
+      },
+      "FASAT": {
+        "label": "Saturated",
+        "quantity": 0.0117,
+        "unit": "%"
+      },
+      "CHOCDF": {
+        "label": "Carbs",
+        "quantity": 0.32,
+        "unit": "%"
+      },
+      "FIBTG": {
+        "label": "Fiber",
+        "quantity": 2.544,
+        "unit": "%"
+      },
+      "PROCNT": {
+        "label": "Protein",
+        "quantity": 0.18,
+        "unit": "%"
+      },
+      "NA": {
+        "label": "Sodium",
+        "quantity": 0.015,
+        "unit": "%"
+      },
+      "CA": {
+        "label": "Calcium",
+        "quantity": 0.8039999999999999,
+        "unit": "%"
+      },
+      "MG": {
+        "label": "Magnesium",
+        "quantity": 0.21428571428571425,
+        "unit": "%"
+      },
+      "K": {
+        "label": "Potassium",
+        "quantity": 0.20425531914893616,
+        "unit": "%"
+      },
+      "FE": {
+        "label": "Iron",
+        "quantity": 0.26666666666666666,
+        "unit": "%"
+      },
+      "ZN": {
+        "label": "Zinc",
+        "quantity": 0.13636363636363635,
+        "unit": "%"
+      },
+      "P": {
+        "label": "Phosphorus",
+        "quantity": 0.10285714285714286,
+        "unit": "%"
+      },
+      "VITA_RAE": {
+        "label": "Vitamin A",
+        "quantity": 0.02,
+        "unit": "%"
+      },
+      "VITC": {
+        "label": "Vitamin C",
+        "quantity": 8.599999999999998,
+        "unit": "%"
+      },
+      "THIA": {
+        "label": "Thiamin (B1)",
+        "quantity": 0.3,
+        "unit": "%"
+      },
+      "RIBF": {
+        "label": "Riboflavin (B2)",
+        "quantity": 0.3692307692307692,
+        "unit": "%"
+      },
+      "NIA": {
+        "label": "Niacin (B3)",
+        "quantity": 0.15,
+        "unit": "%"
+      },
+      "VITB6A": {
+        "label": "Vitamin B6",
+        "quantity": 0.7938461538461539,
+        "unit": "%"
+      },
+      "FOLDFE": {
+        "label": "Folate equivalent (total)",
+        "quantity": 0.195,
+        "unit": "%"
+      },
+      "TOCPHA": {
+        "label": "Vitamin E",
+        "quantity": 0.1,
+        "unit": "%"
+      }
+    },
+    "totalNutrientsKCal": {
+      "ENERC_KCAL": {
+        "label": "Energy",
+        "quantity": 2,
+        "unit": "kcal"
+      },
+      "PROCNT_KCAL": {
+        "label": "Calories from protein",
+        "quantity": 0,
+        "unit": "kcal"
+      },
+      "FAT_KCAL": {
+        "label": "Calories from fat",
+        "quantity": 0,
+        "unit": "kcal"
+      },
+      "CHOCDF_KCAL": {
+        "label": "Calories from carbohydrates",
+        "quantity": 2,
+        "unit": "kcal"
+      }
+    }
+  }
+}

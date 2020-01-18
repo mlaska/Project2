@@ -1,0 +1,45 @@
+{
+  "name": "  sprinkle of smoked paprika (for coloring)",
+  "Volume": "",
+  "Measure": "",
+  "Name": "sprinkle of smoked paprika (for coloring)",
+  "Orig_name": "sprinkle of smoked paprika (for coloring)",
+  "info": {
+    "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_e3a9980aa4c8457f8a6ae5c79dff62aa",
+    "calories": 0,
+    "totalWeight": 0.0,
+    "dietLabels": [],
+    "healthLabels": [
+      "VEGAN",
+      "VEGETARIAN",
+      "PEANUT_FREE",
+      "TREE_NUT_FREE",
+      "ALCOHOL_FREE"
+    ],
+    "cautions": [],
+    "totalNutrients": {},
+    "totalDaily": {},
+    "totalNutrientsKCal": {
+      "ENERC_KCAL": {
+        "label": "Energy",
+        "quantity": 0,
+        "unit": "kcal"
+      },
+      "PROCNT_KCAL": {
+        "label": "Calories from protein",
+        "quantity": 0,
+        "unit": "kcal"
+      },
+      "FAT_KCAL": {
+        "label": "Calories from fat",
+        "quantity": 0,
+        "unit": "kcal"
+      },
+      "CHOCDF_KCAL": {
+        "label": "Calories from carbohydrates",
+        "quantity": 0,
+        "unit": "kcal"
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "name": "  2   dollops of vegan sour cream, preferably Tofutti",
+  "Volume": "",
+  "Measure": "",
+  "Name": "2   dollops of vegan sour cream, preferably Tofutti",
+  "Orig_name": "2   dollops of vegan sour cream, preferably Tofutti",
+  "info": {
+    "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_b5fc09bde42b4b76aa3b87b52cbb9a7d",
+    "calories": 0,
+    "totalWeight": 0.0,
+    "dietLabels": [],
+    "healthLabels": [
+      "VEGETARIAN",
+      "PEANUT_FREE",
+      "TREE_NUT_FREE",
+      "ALCOHOL_FREE",
+      "SULPHITE_FREE"
+    ],
+    "cautions": [],
+    "totalNutrients": {},
+    "totalDaily": {},
+    "totalNutrientsKCal": {
+      "ENERC_KCAL": {
+        "label": "Energy",
+        "quantity": 0,
+        "unit": "kcal"
+      },
+      "PROCNT_KCAL": {
+        "label": "Calories from protein",
+        "quantity": 0,
+        "unit": "kcal"
+      },
+      "FAT_KCAL": {
+        "label": "Calories from fat",
+        "quantity": 0,
+        "unit": "kcal"
+      },
+      "CHOCDF_KCAL": {
+        "label": "Calories from carbohydrates",
+        "quantity": 0,
+        "unit": "kcal"
+      }
+    }
+  }
+}

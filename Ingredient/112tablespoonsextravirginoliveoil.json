@@ -1,0 +1,151 @@
+{
+  "name": "  1 1/2 tablespoons extra-virgin olive oil",
+  "Volume": "",
+  "Measure": "",
+  "Name": "1 1/2 tablespoons extra-virgin olive oil",
+  "Orig_name": "1 1/2 tablespoons extra-virgin olive oil",
+  "info": {
+    "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_c652c4b581a64be1a10b8faf41fab25a",
+    "calories": 179,
+    "totalWeight": 20.25,
+    "dietLabels": [
+      "LOW_CARB"
+    ],
+    "healthLabels": [
+      "SUGAR_CONSCIOUS",
+      "VEGAN",
+      "VEGETARIAN",
+      "PEANUT_FREE",
+      "TREE_NUT_FREE",
+      "ALCOHOL_FREE",
+      "SULPHITE_FREE"
+    ],
+    "cautions": [],
+    "totalNutrients": {
+      "ENERC_KCAL": {
+        "label": "Energy",
+        "quantity": 179.01000000000002,
+        "unit": "kcal"
+      },
+      "FAT": {
+        "label": "Fat",
+        "quantity": 20.25,
+        "unit": "g"
+      },
+      "FASAT": {
+        "label": "Saturated",
+        "quantity": 2.79612,
+        "unit": "g"
+      },
+      "FAMS": {
+        "label": "Monounsaturated",
+        "quantity": 14.7746025,
+        "unit": "g"
+      },
+      "FAPU": {
+        "label": "Polyunsaturated",
+        "quantity": 2.1309075,
+        "unit": "g"
+      },
+      "NA": {
+        "label": "Sodium",
+        "quantity": 0.405,
+        "unit": "mg"
+      },
+      "CA": {
+        "label": "Calcium",
+        "quantity": 0.2025,
+        "unit": "mg"
+      },
+      "K": {
+        "label": "Potassium",
+        "quantity": 0.2025,
+        "unit": "mg"
+      },
+      "FE": {
+        "label": "Iron",
+        "quantity": 0.11340000000000001,
+        "unit": "mg"
+      },
+      "TOCPHA": {
+        "label": "Vitamin E",
+        "quantity": 2.905875,
+        "unit": "mg"
+      },
+      "VITK1": {
+        "label": "Vitamin K",
+        "quantity": 12.190500000000002,
+        "unit": "\u00b5g"
+      }
+    },
+    "totalDaily": {
+      "ENERC_KCAL": {
+        "label": "Energy",
+        "quantity": 8.950500000000002,
+        "unit": "%"
+      },
+      "FAT": {
+        "label": "Fat",
+        "quantity": 31.153846153846153,
+        "unit": "%"
+      },
+      "FASAT": {
+        "label": "Saturated",
+        "quantity": 13.9806,
+        "unit": "%"
+      },
+      "NA": {
+        "label": "Sodium",
+        "quantity": 0.016875,
+        "unit": "%"
+      },
+      "CA": {
+        "label": "Calcium",
+        "quantity": 0.02025,
+        "unit": "%"
+      },
+      "K": {
+        "label": "Potassium",
+        "quantity": 0.004308510638297873,
+        "unit": "%"
+      },
+      "FE": {
+        "label": "Iron",
+        "quantity": 0.6300000000000001,
+        "unit": "%"
+      },
+      "TOCPHA": {
+        "label": "Vitamin E",
+        "quantity": 19.3725,
+        "unit": "%"
+      },
+      "VITK1": {
+        "label": "Vitamin K",
+        "quantity": 10.158750000000001,
+        "unit": "%"
+      }
+    },
+    "totalNutrientsKCal": {
+      "ENERC_KCAL": {
+        "label": "Energy",
+        "quantity": 179,
+        "unit": "kcal"
+      },
+      "PROCNT_KCAL": {
+        "label": "Calories from protein",
+        "quantity": 0,
+        "unit": "kcal"
+      },
+      "FAT_KCAL": {
+        "label": "Calories from fat",
+        "quantity": 179,
+        "unit": "kcal"
+      },
+      "CHOCDF_KCAL": {
+        "label": "Calories from carbohydrates",
+        "quantity": 0,
+        "unit": "kcal"
+      }
+    }
+  }
+}

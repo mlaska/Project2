@@ -1,0 +1,106 @@
+{
+  "name": "  4 tbsp vegetable oil",
+  "Volume": "",
+  "Measure": "",
+  "Name": "4 tbsp vegetable oil",
+  "Orig_name": "4 tbsp vegetable oil",
+  "info": {
+    "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_92215a08cee64305b2aada4e915e56e2",
+    "calories": 495,
+    "totalWeight": 56.0,
+    "dietLabels": [
+      "LOW_CARB"
+    ],
+    "healthLabels": [
+      "SUGAR_CONSCIOUS",
+      "VEGAN",
+      "VEGETARIAN",
+      "PEANUT_FREE",
+      "TREE_NUT_FREE",
+      "ALCOHOL_FREE",
+      "SULPHITE_FREE"
+    ],
+    "cautions": [],
+    "totalNutrients": {
+      "ENERC_KCAL": {
+        "label": "Energy",
+        "quantity": 495.04,
+        "unit": "kcal"
+      },
+      "FAT": {
+        "label": "Fat",
+        "quantity": 56.00000000000001,
+        "unit": "g"
+      },
+      "FASAT": {
+        "label": "Saturated",
+        "quantity": 3.6461600000000005,
+        "unit": "g"
+      },
+      "FATRN": {
+        "label": "Trans",
+        "quantity": 0.42952000000000007,
+        "unit": "g"
+      },
+      "FAMS": {
+        "label": "Monounsaturated",
+        "quantity": 40.314960000000006,
+        "unit": "g"
+      },
+      "FAPU": {
+        "label": "Polyunsaturated",
+        "quantity": 9.57488,
+        "unit": "g"
+      },
+      "TOCPHA": {
+        "label": "Vitamin E",
+        "quantity": 12.208000000000002,
+        "unit": "mg"
+      }
+    },
+    "totalDaily": {
+      "ENERC_KCAL": {
+        "label": "Energy",
+        "quantity": 24.752,
+        "unit": "%"
+      },
+      "FAT": {
+        "label": "Fat",
+        "quantity": 86.15384615384617,
+        "unit": "%"
+      },
+      "FASAT": {
+        "label": "Saturated",
+        "quantity": 18.230800000000002,
+        "unit": "%"
+      },
+      "TOCPHA": {
+        "label": "Vitamin E",
+        "quantity": 81.38666666666668,
+        "unit": "%"
+      }
+    },
+    "totalNutrientsKCal": {
+      "ENERC_KCAL": {
+        "label": "Energy",
+        "quantity": 495,
+        "unit": "kcal"
+      },
+      "PROCNT_KCAL": {
+        "label": "Calories from protein",
+        "quantity": 0,
+        "unit": "kcal"
+      },
+      "FAT_KCAL": {
+        "label": "Calories from fat",
+        "quantity": 495,
+        "unit": "kcal"
+      },
+      "CHOCDF_KCAL": {
+        "label": "Calories from carbohydrates",
+        "quantity": 0,
+        "unit": "kcal"
+      }
+    }
+  }
+}
