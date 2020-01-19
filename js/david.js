@@ -23,6 +23,7 @@ function displayPage()
     createIngredients(firstrecipeDict);
     findIngredients(firstrecipeDict);
     createGaugeCharts(firstrecipeDict);
+    
   });
 
 }
@@ -68,6 +69,7 @@ function optionChanged()
   var recipeIndex = d3.select("#selDataset").property("value"); 
   console.log("dropdown selection", recipeIndex);
   
+
   //read from recipe database and return the one recipe object(dictionary)
   d3.json("data/sample_data.json").then((data)=> {
       
@@ -77,8 +79,10 @@ function optionChanged()
   createIngredients(recipeObject);
   findIngredients(recipeObject);
   createGaugeCharts(recipeObject);
-  
-  });
+  d3.select("#recipe-name").text(recipeObject.recipe.label);
+  d3.select("#link").text(recipeObject.recipe.url);
+  console.log("text with the link", recipeObject.recipe.url)
+  }); 
 }
 
 //Display page when page loads

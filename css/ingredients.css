@@ -1,0 +1,21 @@
+.bubble {
+    position: relative;
+    display: inline-block;
+  }
+
+.form-control {
+    text-align: right;
+  }
+
+.panel-body {
+   text-align: left;
+ }
+#buttons {
+  margin-left: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+#button {
+  text-align: left;
+}
+
