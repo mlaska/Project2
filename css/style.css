@@ -1,6 +1,7 @@
 body {
   text-align: inherit;
   background-color: white;
+  padding-bottom: 10px;
 }
 /* Sticky Footer rules (https://getbootstrap.com/examples/sticky-footer/) */
 html {
@@ -40,8 +41,8 @@ h5{
   right: 0;
   bottom: 0;
   left: 0;
-  text-shadow: 10px;
-  font-family: sans-serif;
+  text-shadow: 1px;
+  
 }
 
 .gauge2 {
@@ -49,24 +50,24 @@ h5{
   right: 0;
   bottom: 0;
   left: 0;
-  text-shadow: 10px;
-  font-family: sans-serif;
+  text-shadow: 1px;
+  
 }
 .gauge3 {
   position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
-  text-shadow: 10px;
-  font-family: sans-serif;
+  text-shadow: 1px;
+  
 }
 .gauge4 {
   position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
-  text-shadow: 10px;
-  font-family: sans-serif;
+  text-shadow: 1px;
+  
 
 }
 
@@ -78,6 +79,7 @@ h5{
   padding: 1px;
   color: rgb(3, 79, 13);
   text-shadow: green;
+  
 }
 
 a {

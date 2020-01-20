@@ -181,7 +181,7 @@ function createI_Charts(aa, grams, newgrams)  //(ingredients Object, initial gra
   
   var bubble_layout = {
       title: "Ingredient Calories", 
-      margin: {t : 0}, 
+      margin: {t : 10}, 
       hovermode: "closets",
       xaxis: { title: "Ingredients"}, 
       margin: {t : 50}
@@ -331,10 +331,11 @@ return multiplier, nameList;
   
   var bubble_layout = {
       title: newTitle, 
-      margin: {t : 0}, 
+      margin: {t : 20}, 
       hovermode: "closets",
       xaxis: { title: "Ingredients"}, 
-      margin: {t : 50}
+      margin: {t : 50, b : 40},
+      font: { color: "green", family: "Arial", size:9},
   };
   
   Plotly.newPlot("bubble", bubble_data, bubble_layout);
