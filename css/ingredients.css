@@ -19,8 +19,8 @@
   padding-left: 1px;
   padding-right: 1px;
   background-color: rgba(248, 250, 250, 0.57);
-  text-align: left;
-  align-items: center;
+  text-align: right;
+ 
 }
 #button {
   text-align: right;
