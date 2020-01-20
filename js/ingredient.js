@@ -177,7 +177,7 @@ function createI_Charts(aa, grams, newgrams)  //(ingredients Object, initial gra
       margin: {t : 0}, 
       hovermode: "closets",
       xaxis: { title: "Ingredients"}, 
-      margin: {t : 30}
+      margin: {t : 50}
   };
   
   Plotly.newPlot("bubble", bubble_data, bubble_layout);
@@ -319,7 +319,7 @@ return multiplier, nameList;
       margin: {t : 0}, 
       hovermode: "closets",
       xaxis: { title: "Ingredients"}, 
-      margin: {t : 30}
+      margin: {t : 50}
   };
   
   Plotly.newPlot("bubble", bubble_data, bubble_layout);

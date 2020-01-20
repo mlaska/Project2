@@ -31,7 +31,7 @@ carbs = recipe.recipe.totalDaily.CHOCDF.quantity;
         }];
         var layout1 = { width: 300, height: 150, margin: { t: 10, b: 1 }, 
         paper_bgcolor: "white",
-        font: { color: "black", family: "Arial", size:9},
+        font: { color: "drakgray", family: "sans-serif", size:9},
         titlefont: {size:8}
         };
     
@@ -60,7 +60,7 @@ carbs = recipe.recipe.totalDaily.CHOCDF.quantity;
         }];
         var layout2 = { width: 300, height: 150, margin: { t: 10, b: 1 }, 
         paper_bgcolor: "white",
-        font: { color: "black", family: "Arial", size:9},
+        font: { color: "drakgray", family: "sans-serif", size:9},
         titlefont: {size:8}
         };
     
@@ -89,7 +89,7 @@ carbs = recipe.recipe.totalDaily.CHOCDF.quantity;
         }];
         var layout3 = { width: 300, height: 150, margin: { t: 10, b: 1 }, 
         paper_bgcolor: "white",
-        font: { color: "black", family: "Arial", size:9},
+        font: { color: "drakgray", family: "sans-serif", size:9},
         titlefont: {size:8}
         };
     
@@ -118,7 +118,7 @@ carbs = recipe.recipe.totalDaily.CHOCDF.quantity;
               }];
         var layout4 = { width: 300, height: 150, margin: { t: 10, b: 1 }, 
         paper_bgcolor: "white",
-        font: { color: "black", family: "Arial", size:9},
+        font: { color: "drakgray", family: "sans-serif", size:9},
         titlefont: {size:8}
         };
     

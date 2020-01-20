@@ -15,7 +15,7 @@
  }
 
 #buttons {
-  margin-left: -50px;
+  margin-left: 15px;
   padding-left: 1px;
   padding-right: 1px;
   background-color: rgba(248, 250, 250, 0.57);
@@ -23,7 +23,7 @@
   align-items: center;
 }
 #button {
-  text-align: left;
+  text-align: right;
   background-color: rgba(143, 213, 218, 0.467);
   padding-left: 120px;
   padding-right: 120;

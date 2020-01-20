@@ -41,6 +41,7 @@ h5{
   bottom: 0;
   left: 0;
   text-shadow: 10px;
+  font-family: sans-serif;
 }
 
 .gauge2 {
@@ -49,6 +50,7 @@ h5{
   bottom: 0;
   left: 0;
   text-shadow: 10px;
+  font-family: sans-serif;
 }
 .gauge3 {
   position: absolute;
@@ -56,6 +58,7 @@ h5{
   bottom: 0;
   left: 0;
   text-shadow: 10px;
+  font-family: sans-serif;
 }
 .gauge4 {
   position: absolute;
@@ -63,12 +66,14 @@ h5{
   bottom: 0;
   left: 0;
   text-shadow: 10px;
+  font-family: sans-serif;
+
 }
 
 #recipe-name {
   text-align: right;
   font-family: cursive;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 35px;
   padding: 1px;
   color: rgb(3, 79, 13);
@@ -84,6 +89,12 @@ a {
 
 #link > #href {
   text-align: right;
+}
+
+.well {
+  background-color: rgba(209, 255, 200, 0.152);
+  font-weight: 300;
+  font-family: sans-serif;
 }
 
 /* The code styles the text at the bottom of the footer */
