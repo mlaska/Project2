@@ -303,12 +303,19 @@ return multiplier, nameList;
     //              size: newList};  
 
     var bubble_chart = {
-
+      type: "scatter",
     mode: "markers",
     x: nameList,
     y: newList,
     // text: calorieList, 
-    marker: {color: nameList, colorscale: "Jet", size: newList}
+    marker: {
+      color: [70, 10, 20, 0, 18, 30 ,94, 1],
+    colorscale: "Jet",
+    cmin: 0,
+    cmax: 30,
+    size: [600, 1200, 800, 400, 1500, 2000],
+    sizemode: 'area'
+    }
   
     };
   
