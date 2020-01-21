@@ -1,5 +1,12 @@
 body {
   text-align: inherit;
+  background-color: white;
+  padding-bottom: 10px;
+}
+/* Sticky Footer rules (https://getbootstrap.com/examples/sticky-footer/) */
+html {
+  position: relative;
+  min-height: 100%;
 }
 
 .jumbotron {
@@ -11,7 +18,8 @@ body {
 p {
   padding: 5px;
   font-size: 15px;
-  color: rgb(245, 203, 123);
+  color: rgb(255, 211, 129);
+  font-weight: 300;
 }
 
 #selDataset {
@@ -33,9 +41,62 @@ h5{
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 5px;
-  background: #58aeff;
-  text-shadow: 10px;
+  text-shadow: 1px;
+  
+}
+
+.gauge2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-shadow: 1px;
+  
+}
+.gauge3 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-shadow: 1px;
+  
+}
+.gauge4 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-shadow: 1px;
+  
+
+}
+
+#recipe-name {
+  text-align: right;
+  font-family: cursive;
+  font-weight: 600;
+  font-size: 35px;
+  padding: 1px;
+  color: rgb(3, 79, 13);
+  text-shadow: green;
+  
+}
+
+a {
+  position: relative;
+  font-size: 10px;
+  text-align: right;
+  
+}
+
+#link > #href {
+  text-align: right;
+}
+
+.well {
+  background-color: rgba(209, 255, 200, 0.152);
+  font-weight: 300;
+  font-family: sans-serif;
 }
 
 /* The code styles the text at the bottom of the footer */

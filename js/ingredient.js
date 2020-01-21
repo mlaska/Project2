@@ -161,23 +161,30 @@ function createI_Charts(aa, grams, newgrams)  //(ingredients Object, initial gra
   console.log(calorieList);
   
   var bubble_chart = {
-      
+    type: "scatter",  
     mode: "markers",
     x: nameList,
     y: calorieList,
     // text: calorieList, 
-    marker: {color: nameList, colorscale: "Jet", size: calorieList}
-  
+    marker: {
+      color: [70, 10, 20, 0, 18, 30 ,94, 1],
+    colorscale: "Jet",
+    cmin: 0,
+    cmax: 30,
+    size: [1000, 1200, 1200, 1400, 1500, 1500,
+          1000, 1200, 1200, 1400, 1500, 1500],
+    sizemode: 'area'
+    }
   };
   
   var bubble_data = [bubble_chart];
   
   var bubble_layout = {
       title: "Ingredient Calories", 
-      margin: {t : 0}, 
+      margin: {t : 10}, 
       hovermode: "closets",
       xaxis: { title: "Ingredients"}, 
-      margin: {t : 30}
+      margin: {t : 50}
   };
   
   Plotly.newPlot("bubble", bubble_data, bubble_layout);
@@ -303,12 +310,20 @@ return multiplier, nameList;
     //              size: newList};  
 
     var bubble_chart = {
-
+      type: "scatter",
     mode: "markers",
     x: nameList,
     y: newList,
     // text: calorieList, 
-    marker: {color: nameList, colorscale: "Jet", size: newList}
+    marker: {
+      color: [70, 10, 20, 0, 18, 30 ,94, 1],
+    colorscale: "Jet",
+    cmin: 0,
+    cmax: 30,
+    size: [1000, 1200, 1200, 1400, 1500, 1500,
+          1000, 1200, 1200, 1400, 1500, 1500],
+    sizemode: 'area'
+    }
   
     };
   
@@ -316,10 +331,11 @@ return multiplier, nameList;
   
   var bubble_layout = {
       title: newTitle, 
-      margin: {t : 0}, 
+      margin: {t : 20}, 
       hovermode: "closets",
       xaxis: { title: "Ingredients"}, 
-      margin: {t : 30}
+      margin: {t : 50, b : 40},
+      font: { color: "green", family: "Arial", size:9},
   };
   
   Plotly.newPlot("bubble", bubble_data, bubble_layout);
