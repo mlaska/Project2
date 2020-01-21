@@ -85,7 +85,7 @@ function createIngredientsEdit(aa)
     $("input[name='ingredient-form']").each(function() {
     origInputs.push($(this).val());
     });
-  console.log("origInputs ", origInputs);
+  console.log("origInputs (weights)", origInputs);
   
   
   createI_Charts(aa, origInputs, origInputs);
@@ -96,9 +96,7 @@ function createIngredientsEdit(aa)
   function ingredientChanged()
   {
     //JQuery!!!
-    // var data = $('input[name="ingredient-form"]').serialize();
-    // console.log(data);
-
+    
     inputs = [];
     $("input[name='ingredient-form']").each(function() {
     inputs.push($(this).val());
@@ -180,8 +178,8 @@ function createI_Charts(aa, grams, newgrams)  //(ingredients Object, initial gra
   var bubble_data = [bubble_chart];
   
   var bubble_layout = {
-      title: "Ingredient Calories", 
-      margin: {t : 10}, 
+      title: "Ingredient Calories (g)", 
+      margin: {t : 20}, 
       hovermode: "closets",
       xaxis: { title: "Ingredients"}, 
       margin: {t : 50}
@@ -302,19 +300,17 @@ return multiplier, nameList;
       default:
         console.log("Bad button, no nutrition data to graph");
     }
-    console.log("newList", newList);
-    // by = newList;
-    // btitle = newTitle;
 
-    // bmarker = { color: nameList,
-    //              size: newList};  
+    console.log("newList", newList);
+    
 
     var bubble_chart = {
+
       type: "scatter",
     mode: "markers",
     x: nameList,
     y: newList,
-    // text: calorieList, 
+     
     marker: {
       color: [70, 10, 20, 0, 18, 30 ,94, 1],
     colorscale: "Jet",
@@ -340,8 +336,4 @@ return multiplier, nameList;
   
   Plotly.newPlot("bubble", bubble_data, bubble_layout);
   
-  // Plotly.restyle("bubble", "y", [by]);
-  
-  // Plotly.restyle("bubble", "marker", [bmarker]);
-  // Plotly.restyle("bubble", "title", [btitle]);
   }

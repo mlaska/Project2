@@ -1,15 +1,15 @@
-//Define funtion to display charts
-function createCharts (varX) {
+// //Define funtion to display charts
+// function createCharts (varX) {
 
-    console.log("createCharts variable ",varX);
-}; 
+//     console.log("createCharts variable ",varX);
+// }; 
 
 function createIngredients (varY) {
   
   //List of ingredients pulled from varY object (varY passed from objectChanged function)
   var list = varY.recipe.ingredientLines;
 
-  console.log("Cindy's recipe in drop down")
+  console.log("Recipe in drop down")
   console.log(varY.recipe.label);
 
   //Create Ingredients List, adjust length based on list variable
@@ -45,10 +45,10 @@ function optionChanged()
       
     var recipeObject = data.hits[recipeIndex];
 
-  createCharts(recipeObject);
-  createIngredients(recipeObject);
-  findIngredients(recipeObject);
-  createGaugeCharts(recipeObject);
+  // createCharts(recipeObject); //in this file
+  createIngredients(recipeObject); //in this file
+  findIngredients(recipeObject); //in ingredient.js
+  createGaugeCharts(recipeObject); //in cindygauge.js
   d3.select("#recipe-name").text(recipeObject.recipe.label);
   d3.select("#link").text(recipeObject.recipe.url);
   console.log("text with the link", recipeObject.recipe.url)
@@ -76,7 +76,7 @@ function displayPage()
     //Call all functions to initialize page
     //(can randomize later, instead of using index 0)
     var firstrecipeDict = data.hits[0];
-    createCharts(firstrecipeDict);
+    // createCharts(firstrecipeDict);
     createIngredients(firstrecipeDict);
     findIngredients(firstrecipeDict);
     createGaugeCharts(firstrecipeDict);
