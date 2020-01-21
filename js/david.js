@@ -16,6 +16,7 @@ function displayPage()
       .property("value", i);
     });
 
+    
     //Call chart and ingredients functions on initial data 
     //(can randomize later, instead of using index 0)
     var firstrecipeDict = data.hits[0];
@@ -77,7 +78,7 @@ function optionChanged()
   createIngredients(recipeObject);
   findIngredients(recipeObject);
   createGaugeCharts(recipeObject);
-  
+  console.log("recipeObject", recipeObject);
   });
 }
 
