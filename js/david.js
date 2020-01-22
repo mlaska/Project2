@@ -1,8 +1,4 @@
 // //Define funtion to display charts
-// function createCharts (varX) {
-
-//     console.log("createCharts variable ",varX);
-// }; 
 
 function createIngredients (varY) {
   

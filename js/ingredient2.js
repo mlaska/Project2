@@ -5,6 +5,10 @@ window.nameList = [];
 window.yValue = [];
 window.yAxis = 0;
 window.yPos = [];
+window.sizeRef = 0;
+
+
+d3.select("#buttons").on("click", graphicChanged);
 
 //Get ingredients info from seperate database
 
@@ -99,7 +103,7 @@ function initChart()
 {
     
     var calorieInit = []; 
-
+    nameList = [];
     //Generate lists for graph 
     for(i=0; i <ingDict.length; i++) {
         try {
@@ -116,8 +120,8 @@ function initChart()
     console.log("Initial chart values", calorieInit);
    
     //sizeList adjusted bubble size for asthetics
-    var sizeList = calorieInit.map(x =>x * 0.4);
-
+    var sizeList = calorieInit.map(x =>x * 1.0);  //irrelevant now, using sizeref...
+    
     var bubble_chart = {
         type: "scatter",  
         mode: "markers",
@@ -129,9 +133,15 @@ function initChart()
         colorscale: "Jet",
         cmin: 0,
         cmax: 30,
-        size: sizeList
+        size: sizeList,
+        sizemode: 'area',
+        sizeref: 2.*(Math.max(...sizeList))/(200.**2),
+        sizemin: 4
         }
     };
+    
+    //Save size ref as gloabl value for graph changed functions
+    sizeRef = bubble_chart.marker.sizeref;
 
     var bubble_data = [bubble_chart];
 
@@ -205,13 +215,17 @@ function updatePlot()
     //    console.log("new values", newY);
 
     var newText = newY.map(x => `Adjusted value ${x.toFixed(2)}`);
-    var newSize = newY.map(x =>x * 0.4);
+    var newSize = newY.map(x =>x * 1.0);        //irrelevant now using sizeref
     var newMarker = {
         color: [70, 10, 20, 0, 18, 30 ,94, 1],
         colorscale: "Jet",
         cmin: 0,
         cmax: 30,
-        size: newSize
+        size: newSize,
+        sizemode: 'area',
+        sizeref: sizeRef,
+        // sizeref: 2.*(Math.max(...newSize))/(200.**2),
+        sizemin: 4
         };
 
     var newLayout = {
@@ -242,7 +256,7 @@ d3.select("#buttons").selectAll("button")
   .remove();
 
 
-function graphicChanged(value) {
+function graphicChanged() {
     
     //Generate multiplier list if one does not exist
     if (multiplier.length == 0) {
@@ -347,7 +361,7 @@ function graphicChanged(value) {
     console.log("List for",buttonValue, newList);
     
     //sizeList adjusted bubble size for asthetics
-    var sizeList = newList.map(x =>x * 0.4);
+    var sizeList = newList.map(x =>x * 1.0);    //irrelevant now using sizeref
 
     var bubble_chart = {
         type: "scatter",
@@ -360,11 +374,16 @@ function graphicChanged(value) {
         colorscale: "Jet",
         cmin: 0,
         cmax: 30,
-        size: sizeList
-        // sizemode: 'area'
+        size: sizeList,
+        sizemode: 'area',
+        sizeref: 2.*(Math.max(...sizeList))/(200.**2),
+        sizemin: 4
         }
     };
   
+    //Save size ref as gloabl value for graph changed functions
+    sizeRef = bubble_chart.marker.sizeref;
+
     var bubble_data = [bubble_chart];
     
     var bubble_layout = {
