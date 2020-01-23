@@ -2,11 +2,11 @@
 //Difine funtion to display charts
 function createGaugeCharts (recipe) {
 console.log(recipe);
-calories = recipe.recipe.totalDaily.ENERC_KCAL.quantity;
-protein = recipe.recipe.totalDaily.PROCNT.quantity;
-sodium = recipe.recipe.totalDaily.NA.quantity;
-fat = recipe.recipe.totalDaily.FAT.quantity;
-carbs = recipe.recipe.totalDaily.CHOCDF.quantity;
+calories = recipe.recipe.totalDaily.ENERC_KCAL.quantity/recipe.recipe.yield;
+protein = recipe.recipe.totalDaily.PROCNT.quantity/recipe.recipe.yield;
+sodium = recipe.recipe.totalDaily.NA.quantity/recipe.recipe.yield;
+fat = recipe.recipe.totalDaily.FAT.quantity/recipe.recipe.yield;
+carbs = recipe.recipe.totalDaily.CHOCDF.quantity/recipe.recipe.yield;
 
     //Gauge 1 
         var gaugeData1 = [{

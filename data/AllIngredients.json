@@ -1,12 +1,5 @@
 [
   {
-<<<<<<< HEAD
-    "name": "  1   medium red bell pepper, thinly sliced",
-    "Volume": "",
-    "Measure": "",
-    "Name": "1   medium red bell pepper, thinly sliced",
-    "Orig_name": "1   medium red bell pepper, thinly sliced",
-=======
     "name": "  1   (15 1/4-ounce) can pineapple chunks in juice, drained",
     "Volume": "",
     "Measure": "",
@@ -11186,7 +11179,6 @@
     "Measure": "",
     "Name": "1 teaspoon  curry powder",
     "Orig_name": "1 teaspoon  curry powder",
->>>>>>> refs/remotes/origin/master
     "info": {
       "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_60564f46a8e24a0d9cd2dc3c71736f61",
       "calories": 6,
@@ -11626,11 +11618,6 @@
           "quantity": 0.5,
           "unit": "\u00b5g"
         },
-<<<<<<< HEAD
-        "CHOCDF_KCAL": {
-          "label": "Calories from carbohydrates",
-          "quantity": 29,
-=======
         "WATER": {
           "label": "Water",
           "quantity": 111.3875,
@@ -21789,7 +21776,6 @@
         "CHOCDF_KCAL": {
           "label": "Calories from carbohydrates",
           "quantity": 0,
->>>>>>> refs/remotes/origin/master
           "unit": "kcal"
         }
       }
