@@ -87,5 +87,4 @@ def IngredientCall(Volume,Measure,Name,Orig_name):
         print(response['uri'])
         with open(file_path, 'w') as outfile:
             json.dump(entry, outfile, indent= 2) 
-    except: print(response['message'])
-    return entry   
+    except: print(response['message'])  
