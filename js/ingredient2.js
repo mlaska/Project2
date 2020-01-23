@@ -160,11 +160,11 @@ function initChart()
 
     var bubble_layout = {
         title: "Ingredient Calories (g)", 
-        margin: {t : 20}, 
+        margin: {t : 20, b : 90 }, 
         hovermode: "closets",
         xaxis: { title: "Ingredients"}, 
         yaxis: { title: "Inital Amount"},
-        margin: {t : 50, b : 40},
+        margin: {t : 50, b : 90},
         font: { color: "green", family: "Arial", size:9},
     };
 
