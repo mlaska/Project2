@@ -2,6 +2,7 @@
 window.origWeights = [];
 window.multiplier = [];
 window.nameList = [];
+window.origValue = [];
 window.yValue = [];
 window.yAxis = 0;
 window.yPos = [];
@@ -181,7 +182,8 @@ function initChart()
     }
     
     yAxis = plot.layout.yaxis.range[1];
-	  yValue = calorieInit;
+    yValue = calorieInit;
+    origValue = calorieInit;
 
 }
 
@@ -220,8 +222,8 @@ function updatePlot()
     // console.log("yValue before change", yValue)
     var newY = [];
     //Recalculate graph amounts by multiplier array
-    for (i=0; i < yValue.length; i++){
-      var x = yValue[i]*multiplier[i];
+    for (i=0; i < origValue.length; i++){
+      var x = origValue[i]*multiplier[i];
       newY.push(x);
     }
     //    console.log("new values", newY);
@@ -349,21 +351,25 @@ function graphicChanged() {
       case "Calories": 
         newList = calList2;
         newTitle = "Ingredient Calories (g)";
+        origValue = calList;
         break;
 
       case "Fat":
         newList = fatList2;
         newTitle = "Ingredient Fat (g)";
+        origValue = fatList;
         break;
       
       case "Protein":
         newList = protList2;
         newTitle = "Ingredient Proteins (g)";
+        origValue = protList;
         break;
 
       case "Sodium":
         newList = sodList2;
         newTitle = "Ingredient Sodium (mg)";
+        origValue = sodList;
         break;
 
       default:
@@ -379,7 +385,7 @@ function graphicChanged() {
         type: "scatter",
         mode: "markers",
         x: nameList,
-        y: newList,
+        y: newList,  //was newList
         
         marker: {
         color: [70, 10, 20, 0, 18, 30 ,94, 1],

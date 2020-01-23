@@ -46,7 +46,7 @@ function optionChanged()
   findIngredients(recipeObject); //in ingredient.js
   createGaugeCharts(recipeObject); //in cindygauge.js
   d3.select("#recipe-name").text(recipeObject.recipe.label);
-  d3.select("#link").text(recipeObject.recipe.url).attr("href",recipeObject.recipe.url);
+  d3.select("#link").text(recipeObject.recipe.url).attr("href",recipeObject.recipe.url).attr("target", "_blank");
   console.log("text with the link", recipeObject.recipe.url) 
   }); 
 }
@@ -77,7 +77,7 @@ function displayPage()
     findIngredients(firstrecipeDict);
     createGaugeCharts(firstrecipeDict);
     d3.select("#recipe-name").text(firstrecipeDict.recipe.label);
-    d3.select("#link").text(firstrecipeDict.recipe.url).attr("href",firstrecipeDict.recipe.url);
+    d3.select("#link").text(firstrecipeDict.recipe.url).attr("href",firstrecipeDict.recipe.url).attr("target", "_blank");
   });
 
 }
