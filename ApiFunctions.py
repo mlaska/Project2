@@ -54,8 +54,10 @@ def IngredientCall(Volume,Measure,Name,Orig_name):
     
     #API key to be hard coded for now
     #need to put together a config file call to pull from the api
-    ApiId = "909c74bc" #Ingredient search
-    API = 'cbdda29b0c478cb89092c83451e89ed6'
+    ApiId2 = "909c74bc" #Ingredient search
+    API2 = 'cbdda29b0c478cb89092c83451e89ed6'
+    API = '348b097af2c145e7cb782cf732021a5c'
+    ApiId = 'c32fad3a'
     #Convert spaces to space character in ingredient searched
     Ingredient = f'{Volume} {Measure} {Name}'
     IngredientReplaceSpace = re.sub("\s+", "%20", Ingredient.strip())
@@ -81,15 +83,9 @@ def IngredientCall(Volume,Measure,Name,Orig_name):
              "Orig_name": Orig_name,
              "info": response}
     #Save the file
-    with open(file_path, 'w') as outfile:
-        json.dump(entry, outfile, indent= 2)  
-    
-    #merge all the recipes in the root folder into a master recipe file that can be used by the website
-    #FinalFilePath = './data/AllIngredients.json' #name the folder where the final 
-    #result = []
-    #for f in glob.glob(f"./{WhereToStore}/*.json"):
-    #    with open(f, "rb") as infile:
-    #        result.append(json.load(infile))
-    #with open(FinalFilePath, "w") as outfile:
-    #    json.dump(result, outfile, indent= 2)    
-    #return entry   
+    try: 
+        print(response['uri'])
+        with open(file_path, 'w') as outfile:
+            json.dump(entry, outfile, indent= 2) 
+    except: print(response['message'])
+    return entry   

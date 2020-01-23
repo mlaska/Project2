@@ -5,44 +5,7 @@
   "Name": "\u00bd avocado",
   "Orig_name": "\u00bd avocado",
   "info": {
-    "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_555a639a16d84a8fa31982343465ed71",
-    "calories": 0,
-    "totalWeight": 0.0,
-    "dietLabels": [],
-    "healthLabels": [
-      "VEGAN",
-      "VEGETARIAN",
-      "PEANUT_FREE",
-      "TREE_NUT_FREE",
-      "ALCOHOL_FREE",
-      "SULPHITE_FREE"
-    ],
-    "cautions": [
-      "SULFITES"
-    ],
-    "totalNutrients": {},
-    "totalDaily": {},
-    "totalNutrientsKCal": {
-      "ENERC_KCAL": {
-        "label": "Energy",
-        "quantity": 0,
-        "unit": "kcal"
-      },
-      "PROCNT_KCAL": {
-        "label": "Calories from protein",
-        "quantity": 0,
-        "unit": "kcal"
-      },
-      "FAT_KCAL": {
-        "label": "Calories from fat",
-        "quantity": 0,
-        "unit": "kcal"
-      },
-      "CHOCDF_KCAL": {
-        "label": "Calories from carbohydrates",
-        "quantity": 0,
-        "unit": "kcal"
-      }
-    }
+    "status": "error",
+    "message": "Usage limits are exceeded"
   }
 }

@@ -5,42 +5,7 @@
   "Name": "olive oil in spritzer",
   "Orig_name": "olive oil in spritzer",
   "info": {
-    "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_4320c8ec9cd74fc5bf608e26d807eb4d",
-    "calories": 0,
-    "totalWeight": 0.0,
-    "dietLabels": [],
-    "healthLabels": [
-      "VEGAN",
-      "VEGETARIAN",
-      "PEANUT_FREE",
-      "TREE_NUT_FREE",
-      "ALCOHOL_FREE",
-      "SULPHITE_FREE"
-    ],
-    "cautions": [],
-    "totalNutrients": {},
-    "totalDaily": {},
-    "totalNutrientsKCal": {
-      "ENERC_KCAL": {
-        "label": "Energy",
-        "quantity": 0,
-        "unit": "kcal"
-      },
-      "PROCNT_KCAL": {
-        "label": "Calories from protein",
-        "quantity": 0,
-        "unit": "kcal"
-      },
-      "FAT_KCAL": {
-        "label": "Calories from fat",
-        "quantity": 0,
-        "unit": "kcal"
-      },
-      "CHOCDF_KCAL": {
-        "label": "Calories from carbohydrates",
-        "quantity": 0,
-        "unit": "kcal"
-      }
-    }
+    "status": "error",
+    "message": "Usage limits are exceeded"
   }
 }

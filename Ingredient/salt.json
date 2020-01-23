@@ -1,9 +1,9 @@
 {
-  "name": "  Salt",
+  "name": "  salt",
   "Volume": "",
   "Measure": "",
-  "Name": "Salt",
-  "Orig_name": "Salt",
+  "Name": "salt",
+  "Orig_name": "salt",
   "info": {
     "status": "error",
     "message": "Usage limits are exceeded"
