@@ -17,26 +17,38 @@ function findIngredients(varZ)
   //List of ingredients from recipe Object(varZ from optionChanged function)
   recipeList = varZ.recipe.ingredientLines;
 
-  console.log("findIngredients recipeList", recipeList);
+  console.log("findIngredients recipeList", recipeList[2]);
 
   //Empty list of dictionaries to store ingredients' nutrition data
   ingDict = [];
 
 //Loops through each ingredient in recipeList, finds recipe in ingredient database,
 //  adds ingredient nutrition object to list ingDict
-  d3.json("data/sample_ingredients.json").then((data) => {
+  d3.json("data/AllIngredients.json").then((data) => {
     
-    dataArray = data.hits;
+    dataArray = data;
+    console.log("AllIngredients", data);
     for(i=0; i < recipeList.length; i++) {
 
-      var data_filter = dataArray.filter( element => element.name ==recipeList[i]);
+      try {
+      var data_filter = dataArray.filter( element => element.Orig_name ==recipeList[i].substring(0,76));
       ingDict.push(data_filter);
+      }
+      catch(err) {
+        console.log("Failed to match ", recipeList[i]);
+      }
     }
-    
+    console.log("IngDict", ingDict);
      //List of ingredient weights (to be used for multiplier ratio)
      origWeights = [];
      for(i=0; i < ingDict.length; i++) {
+        
+      try{
          origWeights.push(ingDict[i][0].info.totalWeight);
+      }
+      catch(err) {
+        window.alert("Incomplete Ingredients Data...select different recipe");
+      }
      }
 
     console.log("findIngredients ingDict", ingDict);
@@ -169,7 +181,7 @@ function initChart()
     }
     
     yAxis = plot.layout.yaxis.range[1];
-	yValue = calorieInit;
+	  yValue = calorieInit;
 
 }
 
@@ -205,7 +217,7 @@ function amountsChanged()
 
 function updatePlot()
 {
-    console.log("yValue before change", yValue)
+    // console.log("yValue before change", yValue)
     var newY = [];
     //Recalculate graph amounts by multiplier array
     for (i=0; i < yValue.length; i++){
@@ -408,6 +420,7 @@ function graphicChanged() {
     }
     yAxis = plot.layout.yaxis.range[1];
     yValue = newList;
+    console.log("yValue after button click", yValue);
 //   console.log("yPos for ", buttonValue, yPos);
 //   console.log("yAxis for ", buttonValue, yAxis);
 }

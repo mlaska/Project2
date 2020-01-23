@@ -37,11 +37,11 @@ function optionChanged()
   
 
   //read from recipe database and return the one recipe object(dictionary)
-  d3.json("data/sample_data.json").then((data)=> {
+  d3.json("data/AllRecipes.json").then((data)=> {
       
-    var recipeObject = data.hits[recipeIndex];
+    var recipeObject = data[recipeIndex];
 
-  // createCharts(recipeObject); //in this file
+  
   createIngredients(recipeObject); //in this file
   findIngredients(recipeObject); //in ingredient.js
   createGaugeCharts(recipeObject); //in cindygauge.js
@@ -59,9 +59,9 @@ function displayPage()
   var selector = d3.select("#selDataset");
   
   //Populate the dropdown list ***I changed "value" field to be index number
-  d3.json("data/sample_data.json").then((data)=> {
+  d3.json("data/AllRecipes.json").then((data)=> {
     
-    var recipe_names = data.hits.map(l => l.recipe.label);
+    var recipe_names = data.map(l => l.recipe.label);
     
     recipe_names.forEach(function(d,i) {
       selector.append("option")
@@ -71,13 +71,13 @@ function displayPage()
 
     //Call all functions to initialize page
     //(can randomize later, instead of using index 0)
-    var firstrecipeDict = data.hits[0];
-    // createCharts(firstrecipeDict);
+    var firstrecipeDict = data[0];
+    
     createIngredients(firstrecipeDict);
     findIngredients(firstrecipeDict);
     createGaugeCharts(firstrecipeDict);
     d3.select("#recipe-name").text(firstrecipeDict.recipe.label);
-    d3.select("#link").text(firstrecipeDict.recipe.url);
+    d3.select("#link").text(firstrecipeDict.recipe.url).attr("href",firstrecipeDict.recipe.url);
   });
 
 }
