@@ -278,6 +278,10 @@ function graphicChanged() {
         for (i=0; i < ingDict.length; i++){
             multiplier.push(1);}
     }
+    if (multiplier.length != ingDict.length) {
+      for (i=0; i < ingDict.length; i++){
+        multiplier.push(1);}
+    }
 
     var calList = [];
     var protList = [];
